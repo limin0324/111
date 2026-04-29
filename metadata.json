@@ -1,0 +1,6 @@
+{
+  "name": "BerryWord (莓莓背单词)",
+  "description": "A cute, student-friendly English vocabulary app with macaron colors, card-flipping animations, and helpful mascots.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["vocabulary", "education", "flashcards"]
+}

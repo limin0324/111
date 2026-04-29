@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-macaron-pink: #FFDDE2;
+  --color-macaron-blue: #D0EFFF;
+  --color-macaron-yellow: #FFF9C4;
+  --color-macaron-cream: #FFFBFA;
+  --color-berry-pink: #FF85A1;
+  --color-berry-blue: #4FA3FF;
+  
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2.5rem;
+  --radius-3xl: 3.5rem;
+
+  --font-sans: "Inter", "ZCOOL KuaiLe", cursive, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-macaron-cream);
+    color: #4A4A4A;
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .cute-btn {
+    @apply px-8 py-4 rounded-3xl font-bold transition-all active:scale-95 shadow-[0_8px_0_0_rgba(0,0,0,0.05)] active:shadow-none active:translate-y-[2px];
+  }
+  
+  .cute-card {
+    @apply bg-white rounded-3xl p-8 shadow-[0_12px_24px_rgba(255,133,161,0.1)];
+  }
+
+  /* Cute Floating Animation */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+}
